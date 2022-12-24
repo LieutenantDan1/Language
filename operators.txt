@@ -1,0 +1,55 @@
+(name, type, associativity)
+left associativity: 1 / 2 / 3 = (1 / 2) / 3
+right associativity: 1 ** 2 ** 3 = 1 ** (2 ** 3)
+sorted by precedence (highest first)
+
+---------------------------------------------------
+. (member access, binary, left)
+---------------------------------------------------
+- (negate, unary (right), right)
+** (power, binary, right)
+! (logical not, unary (right), right)
+---------------------------------------------------
+* (multiply, binary, left)
+/ (divide, binary, left)
+% (remainder, binary, left)
+---------------------------------------------------
++ (add, binary, left)
+- (subtract, binary, left)
+---------------------------------------------------
+<< (shift left, binary, left)
+>> (shift right, binary, left)
+---------------------------------------------------
+< (less, binary, n/a) (a < b < c => true < c => type mismatch)
+<= (less or equal, binary, n/a)
+> (greater, binary, n/a)
+>= (greater or equal, binary, n/a)
+---------------------------------------------------
+== (equal, binary, n/a)
+!= (not equal, binary, n/a)
+---------------------------------------------------
+& (bitwise and, binary, left)
+---------------------------------------------------
+^ (bitwise xor, binary, left)
+---------------------------------------------------
+| (bitwise or, binary, left)
+---------------------------------------------------
+&& (logical and, binary, left)
+---------------------------------------------------
+|| (logical or, binary, left)
+---------------------------------------------------
+= (copy assign, binary, right)
+:= (reference assign, binary, right)
+**= (raise to, binary, right)
+*= (multiply, binary, right)
+/= (divide, binary, right)
++= (add, binary, right)
+-= (subtract, binary, right)
+%= (assign remainder, binary, right)
+<<= (shift left, binary, right)
+>>= (shift right, binary, right)
+&= (and, binary, right)
+^= (xor, binary, right)
+|= (or, binary, right)
+return (return, unary (right), right)
+---------------------------------------------------

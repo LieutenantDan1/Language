@@ -1,0 +1,72 @@
+func fib(n)
+{
+    x = 0;
+    y = 1;
+    while (n > 0)
+    {
+        z = x + y;
+        x = y;
+        y = z;
+        n -= 1;
+    }
+    return x;
+}
+
+an_integer = 10;
+print(fib(an_integer));
+
+-----------------------------------------------------------
+
+Block
+    Locals ----
+    print: BuiltinFunction
+        Params ----
+        x
+        -----------
+        std::cout << x << '\n';
+    fib: UserFunction
+        Params ----
+        0: n
+        -----------
+        Block
+            Locals ----
+            n
+            x
+            y
+            z
+            -----------
+            Assign(x, Constant(0))
+            Assign(y, Constant(1))
+            WhileLoop(Greater(n, Constant(0)))
+                Block
+                    Locals ----
+                    -----------
+                    Assign(z, BinarySum(x, y))
+                    Assign(x, y)
+                    Assign(y, z)
+                    Subtract(n, Constant(1))
+            Return(x)
+    an_integer
+    -----------
+    Assign(an_integer, Constant(10))
+    Call(print, Call(fib, [an_integer]))
+
+
+
+
+
+
+
+
+
+func print(what...; end = '\n', sep = ' ')
+{
+    # printing code here
+    # what is a list in this context
+}
+
+print(1, 2, 3);
+# output: 1 2 3
+
+print(1, 2, 3; '\n', ' | ');
+# output: 1 | 2 | 3
