@@ -4,7 +4,7 @@
 #include <cstdint>
 #include <memory>
 #include "name.hpp"
-#include "object.hpp"
+#include "../Types/object.hpp"
 #include <string>
 #include <unordered_map>
 #include <vector>
@@ -76,10 +76,9 @@ class Call : public Expression
 {
 private:
     ExprPtr _left;
+    std::vector<std::pair<ObjRef*, ExprPtr>> _args;
 
 public:
-    std::vector<ExprPtr> args;
-
     explicit Call(ExprPtr&& left);
 
     ObjRef evaluate() override;

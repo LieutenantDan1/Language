@@ -1,7 +1,7 @@
 #include "object.hpp"
 #include <stdexcept>
 #include "typedesc.hpp"
-#include "utils.hpp"
+#include "../utils.hpp"
 
 ObjRef Object::_object_type_desc = new TypeDesc("Object", nullptr);
 

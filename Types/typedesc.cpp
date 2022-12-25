@@ -1,5 +1,5 @@
 #include "typedesc.hpp"
-#include "utils.hpp"
+#include "../utils.hpp"
 
 ObjRef TypeDesc::_type_desc_type_desc = new TypeDesc("TypeDesc", Object::_object_type_desc);
 

@@ -1,7 +1,7 @@
 #include "code.hpp"
 #include <stdexcept>
-#include "typedesc.hpp"
-#include "utils.hpp"
+#include "../Types/typedesc.hpp"
+#include "../utils.hpp"
 
 Expression::Expression() {}
 

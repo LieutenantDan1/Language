@@ -1,7 +1,7 @@
 #pragma once
 
-#include "code.hpp"
-#include "name.hpp"
+#include "../Runtime/code.hpp"
+#include "../Runtime/name.hpp"
 #include <string>
 #include <unordered_map>
 
